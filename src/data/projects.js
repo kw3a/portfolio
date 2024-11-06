@@ -1,4 +1,7 @@
 import prueba from "../assets/prueba.png";
+import react from "../assets/python.webp";
+
+const inspectorURL = "https://github.com/kw3a/inspector";
 const projects = [
   {
     name: "Plataforma de reclutamiento con juez evaluador de código",
@@ -11,7 +14,7 @@ const projects = [
     name: "Generador de shorts de historias de reddit",
     description:
       "Se puede seleccionar el subreddit, video de fondo, voz de lectura y el número de historias que se quieren leer. ",
-    image: "",
+    image: react,
     tags: ["Python", "ffmpeg", "praw"],
   },
   {
@@ -19,6 +22,7 @@ const projects = [
     description:
       "El programa puede utilizarse como prefijo de cualquier comando. Si el comando imprime en stderr, cada error se manda y organiza en el dashboard",
     image: "",
+    url: inspectorURL,
     tags: ["express", "nodejs", "htmx", "tailwind"],
   },
   {
