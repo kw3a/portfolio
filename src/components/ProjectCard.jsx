@@ -1,36 +1,50 @@
 import github from "../assets/github.svg";
+import { useI18n } from "../i18n/i18n.jsx";
 function ProjectCard({ name, description, image, url, tags }) {
+  const { t, tl } = useI18n();
   return (
-    <div className="flex flex-col rounded bg-gray-900">
-      <div class="relative w-full">
-        <div class="pt-[50%]"></div>
+    <div className="group flex flex-col rounded-xl bg-gray-900/60 border border-gray-800 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+      <div className="relative w-full bg-gray-800">
+        <div className="pt-[56%]"></div>
 
-        <div class="absolute inset-0 flex justify-center items-center">
-          <img
-            src={image}
-            alt="project image"
-            class="max-w-full max-h-full object-contain"
-          />
+        <div className="absolute inset-0 flex justify-center items-center p-2">
+          {image ? (
+            <img
+              src={image}
+              alt="project image"
+              className="h-full w-full object-contain"
+            />
+          ) : (
+            <div className="h-full w-full flex items-center justify-center text-sm text-gray-400">
+              {t("common.no_image")}
+            </div>
+          )}
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 p-4">
-        <span className="font-semibold">{name}</span>
-        <span>{description}</span>
-        <div class="flex flex-wrap gap-2 overflow-x-auto max-w-full">
+      <div className="flex flex-col gap-3 p-5">
+        <span className="text-lg font-semibold tracking-tight">{tl(name)}</span>
+        <span className="text-sm text-gray-300 leading-relaxed">{tl(description)}</span>
+        <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="border border-gray-400 p-1 rounded text-gray-400"
+              className="inline-flex items-center rounded-full border border-gray-700 bg-gray-800/60 px-2.5 py-1 text-xs text-gray-300 group-hover:border-gray-600"
             >
               {tag}
             </span>
           ))}
         </div>
         {url ? (
-          <div className="flex flex-row-reverse">
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="github logo" width="30" height="30" />
+          <div className="mt-2 flex flex-row-reverse">
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-80 hover:opacity-100 transition-opacity"
+              title={t("common.github_title")}
+            >
+              <img src={github} alt="github logo" width="28" height="28" />
             </a>
           </div>
         ) : null}

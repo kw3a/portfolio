@@ -1,21 +1,19 @@
+import { useI18n } from "../i18n/i18n.jsx";
+
 function Profile({ image, degree }) {
+  const { t } = useI18n();
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-5 items-center text-center">
         <img
           src={image}
           alt="profile image"
-          className="rounded-full object-cover"
+          className="h-28 w-28 rounded-full object-cover ring-2 ring-gray-700 shadow"
         />
         <div>
-          <span className="block text-center">Aldair Torrez</span>
-          <span className="block text-center">{degree}</span>
+          <span className="block text-xl font-semibold tracking-tight">Aldair Torrez</span>
         </div>
-        <pre className="text-wrap">
-          Desarrollador full stack con tendencia al backend. Prefiero tener el
-          control a producir resultados rápidos que no entiendo. Mientras más
-          difícil sea una actividad, la encuentro más divertida
-        </pre>
+        <p className="max-w-2xl text-gray-300 leading-relaxed">{t("profile.description")}</p>
       </div>
     </div>
   );

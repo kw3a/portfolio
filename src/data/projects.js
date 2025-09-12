@@ -1,42 +1,81 @@
 import prueba from "../assets/prueba.png";
 import react from "../assets/python.webp";
+import hid from "../assets/hid_scheme.jpg";
 
 const inspectorURL = "https://github.com/kw3a/inspector";
+const hidURL = "https://github.com/kw3a/dual-arcade-joystick";
+const spottedURL = "https://github.com/kw3a/spotted-server";
 const projects = [
   {
-    name: "Plataforma de reclutamiento con juez evaluador de código",
-    description:
-      "Proyecto final de grado (en proceso). Tiene el objetivo de facilitar la parte de la prueba técnica en el proceso de entrevistas laborales para desarrolladores de software.      Las pruebas que se pueden realizar son pruebas de tipo algorítmico, similar a HackerRank y Leetcode. ",
+    name: {
+      es: "Plataforma de reclutamiento con juez evaluador de código",
+      en: "Recruitment platform with code-judging system",
+    },
+    description: {
+      es: "Proyecto final. Tiene el objetivo de facilitar la parte de la prueba técnica en el proceso de entrevistas laborales para desarrolladores de software. Las pruebas que se pueden realizar son de tipo algorítmico, similar a HackerRank y LeetCode.",
+      en: "Final project. Aims to streamline the technical test stage in developer interviews. Supports algorithmic challenges similar to HackerRank and LeetCode.",
+    },
     image: prueba,
+    url: spottedURL,
     tags: ["Go", "htmx", "Mysql", "SSE", "tailwind", "Docker", "testing", "JWT auth"],
   },
   {
-    name: "Generador de shorts de historias de reddit",
-    description:
-      "Se puede seleccionar el subreddit, video de fondo, voz de lectura y el número de historias que se quieren leer. ",
+    name: {
+      es: "Dispositivo USB HID compuesto",
+      en: "Composite USB HID device",
+    },
+    description: {
+      es: "Clon de 'Xin-Mo Tek Dual Joystick Controller' con STM32F103C8T6",
+      en: "Clone of 'Xin-Mo Tek Dual Joystick Controller' with STM32F103C8T6",
+    },
+    image: hid,
+    url: hidURL,
+    tags: ["C", "STM32Cube Framework", "USB HID"],
+  },
+  {
+    name: {
+      es: "Generador de shorts de historias de reddit",
+      en: "Reddit stories shorts generator",
+    },
+    description: {
+      es: "Permite seleccionar el subreddit, video de fondo, voz de lectura y el número de historias a leer.",
+      en: "Select subreddit, background video, narration voice, and number of stories to read.",
+    },
     image: react,
     tags: ["Python", "ffmpeg", "praw"],
   },
   {
-    name: "Organizador de errores de terminal",
-    description:
-      "El programa puede utilizarse como prefijo de cualquier comando. Si el comando imprime en stderr, cada error se manda y organiza en el dashboard",
-    image: "",
+    name: {
+      es: "Organizador de errores de terminal",
+      en: "Terminal errors organizer",
+    },
+    description: {
+      es: "Se usa como prefijo de cualquier comando. Si el comando imprime en stderr, cada error se envía y organiza en el dashboard.",
+      en: "Used as a prefix for any command. If the command prints to stderr, each error is sent and organized in the dashboard.",
+    },
+    image: react,
     url: inspectorURL,
     tags: ["express", "nodejs", "htmx", "tailwind"],
   },
   {
-    name: "z-type",
-    description:
-      "Juego de mecanografía en el que se destruyen naves espaciales escribiendo las palabras que llevan consigo. ",
-    image: "",
+    name: { es: "z-type", en: "z-type" },
+    description: {
+      es: "Juego de mecanografía en el que se destruyen naves espaciales escribiendo las palabras que llevan consigo.",
+      en: "Typing game where you destroy spaceships by typing the words they carry.",
+    },
+    image: react,
     tags: ["javascript", "html", "css", "svg"],
   },
   {
-    name: "Agrupación con algoritmos genéticos",
-    description:
-      "Se agrupan elementos basados en su posición en un espacio de 2 dimensiones. El tamaño de los grupos se puede configurar. ",
-    image: "",
+    name: {
+      es: "Agrupación con algoritmos genéticos",
+      en: "Clustering with genetic algorithms",
+    },
+    description: {
+      es: "Agrupa elementos basados en su posición en un espacio 2D. El tamaño de los grupos es configurable.",
+      en: "Clusters elements based on their position in a 2D space. Group size is configurable.",
+    },
+    image: react,
     tags: ["python", "tkinter"],
   },
 ];
