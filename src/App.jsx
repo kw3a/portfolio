@@ -2,7 +2,7 @@ import ProjectCard from "./components/ProjectCard";
 import foto from "./assets/foto.jpg";
 import Profile from "./components/Profile";
 import TechCarousel from "./components/TechCarousel";
-import { backendSkills, frontendSkills } from "./data/skills";
+import { skills } from "./data/skills";
 import projects from "./data/projects";
 import Footer from "./components/Footer";
 import experiences from "./data/experiences";
