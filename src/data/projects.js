@@ -1,10 +1,12 @@
 import prueba from "../assets/prueba.png";
 import react from "../assets/python.webp";
 import hid from "../assets/hid_scheme.jpg";
+import shorts from "../assets/shortsSS.png"
 
 const inspectorURL = "https://github.com/kw3a/inspector";
 const hidURL = "https://github.com/kw3a/dual-arcade-joystick";
 const spottedURL = "https://github.com/kw3a/spotted-server";
+const shortGenURL = "https://github.com/kw3a/short-generator";
 const projects = [
   {
     name: {
@@ -38,11 +40,12 @@ const projects = [
       en: "Reddit stories shorts generator",
     },
     description: {
-      es: "Permite seleccionar el subreddit, video de fondo, voz de lectura y el número de historias a leer.",
-      en: "Select subreddit, background video, narration voice, and number of stories to read.",
+      es: "Permite seleccionar el subreddit, video de fondo, voz de lectura y el número de historias a leer. Subí algunos videos generados con la herramienta aquí: https://www.tiktok.com/@click7tv",
+      en: "Select subreddit, background video, narration voice, and number of stories to read. I have uploaded some videos generated with this tool here: https://www.tiktok.com/@click7tv",
     },
-    image: react,
-    tags: ["Python", "ffmpeg", "praw"],
+    image: shorts,
+    url: shortGenURL,
+    tags: ["Python", "ffmpeg", "praw", "moviepy", "openai API", "azure tts API"],
   },
   {
     name: {
@@ -55,28 +58,7 @@ const projects = [
     },
     image: react,
     url: inspectorURL,
-    tags: ["express", "nodejs", "htmx", "tailwind"],
-  },
-  {
-    name: { es: "z-type", en: "z-type" },
-    description: {
-      es: "Juego de mecanografía en el que se destruyen naves espaciales escribiendo las palabras que llevan consigo.",
-      en: "Typing game where you destroy spaceships by typing the words they carry.",
-    },
-    image: react,
-    tags: ["javascript", "html", "css", "svg"],
-  },
-  {
-    name: {
-      es: "Agrupación con algoritmos genéticos",
-      en: "Clustering with genetic algorithms",
-    },
-    description: {
-      es: "Agrupa elementos basados en su posición en un espacio 2D. El tamaño de los grupos es configurable.",
-      en: "Clusters elements based on their position in a 2D space. Group size is configurable.",
-    },
-    image: react,
-    tags: ["python", "tkinter"],
+    tags: ["express", "nodejs", "htmx", "tailwind", "shell", "bash"],
   },
 ];
 
