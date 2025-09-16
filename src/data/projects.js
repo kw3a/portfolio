@@ -1,7 +1,7 @@
 import prueba from "../assets/prueba.png";
-import react from "../assets/python.webp";
 import hid from "../assets/hid_scheme.jpg";
 import shorts from "../assets/shortsSS.png"
+import inspector from "../assets/inspectorSS.png"
 
 const inspectorURL = "https://github.com/kw3a/inspector";
 const hidURL = "https://github.com/kw3a/dual-arcade-joystick";
@@ -56,7 +56,7 @@ const projects = [
       es: "Se usa como prefijo de cualquier comando. Si el comando imprime en stderr, cada error se envía y organiza en el dashboard.",
       en: "Used as a prefix for any command. If the command prints to stderr, each error is sent and organized in the dashboard.",
     },
-    image: react,
+    image: inspector,
     url: inspectorURL,
     tags: ["express", "nodejs", "htmx", "tailwind", "shell", "bash"],
   },
