@@ -36,19 +36,6 @@ const projects = [
   },
   {
     name: {
-      es: "Generador de shorts de historias de reddit",
-      en: "Reddit stories shorts generator",
-    },
-    description: {
-      es: "Permite seleccionar el subreddit, video de fondo, voz de lectura y el número de historias a leer. Subí algunos videos generados con la herramienta aquí: https://www.tiktok.com/@click7tv",
-      en: "Select subreddit, background video, narration voice, and number of stories to read. I have uploaded some videos generated with this tool here: https://www.tiktok.com/@click7tv",
-    },
-    image: shorts,
-    url: shortGenURL,
-    tags: ["Python", "ffmpeg", "praw", "moviepy", "openai API", "azure tts API"],
-  },
-  {
-    name: {
       es: "Organizador de errores de terminal",
       en: "Terminal errors organizer",
     },
@@ -59,6 +46,19 @@ const projects = [
     image: inspector,
     url: inspectorURL,
     tags: ["express", "nodejs", "htmx", "tailwind", "shell", "bash"],
+  },
+  {
+    name: {
+      es: "Generador de shorts de historias de reddit",
+      en: "Reddit stories shorts generator",
+    },
+    description: {
+      es: "Permite seleccionar el subreddit, video de fondo, voz de lectura y el número de historias a leer. Subí algunos videos generados con la herramienta aquí: https://www.tiktok.com/@click7tv",
+      en: "Select subreddit, background video, narration voice, and number of stories to read. I have uploaded some videos generated with this tool here: https://www.tiktok.com/@click7tv",
+    },
+    image: shorts,
+    url: shortGenURL,
+    tags: ["Python", "ffmpeg", "praw", "moviepy", "openai API", "azure tts API"],
   },
 ];
 

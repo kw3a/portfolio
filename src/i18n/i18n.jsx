@@ -17,12 +17,10 @@ const messages = {
       projects: "Proyectos",
       experiences: "Experiencia",
       education: "Educación",
-      backend: "Backend",
-      frontend: "Frontend",
     },
     profile: {
       description:
-        "Lo más bonito de la vida es lo que no sirve para nada",
+        "Disfruto abordar proyectos diversos. Mientras más diferente al anterior, mejor",
     },
     common: {
       no_image: "Sin imagen",
@@ -32,11 +30,6 @@ const messages = {
       language_toggle: "ES",
       change_language: "Cambiar idioma",
     },
-    education: {
-      degree: "Ingeniería en Informática",
-      university: "Universidad Mayor de San Simón",
-      period: "2019 - 2024",
-    },
   },
   en: {
     sections: {
@@ -44,12 +37,10 @@ const messages = {
       projects: "Projects",
       experiences: "Experience",
       education: "Education",
-      backend: "Backend",
-      frontend: "Frontend",
     },
     profile: {
       description:
-        "The most beautiful things in life are those that have no practical use",
+        "I like to work on diverse projects. The more different from the previous one, the better",
     },
     common: {
       no_image: "No image",
@@ -58,11 +49,6 @@ const messages = {
       code_path: "src/data/experiences.js",
       language_toggle: "EN",
       change_language: "Change language",
-    },
-    education: {
-      degree: "Computer Engineering",
-      university: "Universidad Mayor de San Simón",
-      period: "2019 - 2024",
     },
   },
 };

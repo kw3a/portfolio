@@ -1,6 +1,6 @@
 const education = [
   {
-    degree: { es: "Ingeniería en Informática", en: "Computer Science" },
+    degree: { es: "Ingeniería en Informática (En proceso de titulación)", en: "Computer Science (In progress)" },
     university: { es: "Universidad Mayor de San Simón", en: "Universidad Mayor de San Simón" },
     period: "2019 - 2025",
     location: { es: "Cochabamba, BO", en: "Cochabamba, BO" },

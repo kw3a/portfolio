@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import SkillCard from "./SkillCard";
 
 function TechCarousel({ skills, title }) {
   const maskRef = useRef(null);
   const trackRef = useRef(null);
-  const [paused, setPaused] = useState(false);
   const offsetRef = useRef(0);
   const halfWidthRef = useRef(0);
 
@@ -17,11 +16,6 @@ function TechCarousel({ skills, title }) {
     const speed = 40; // pixels per second
 
     const step = (ts) => {
-      if (paused) {
-        lastTime = ts;
-        rafId = requestAnimationFrame(step);
-        return;
-      }
       if (!lastTime) lastTime = ts;
       const dt = (ts - lastTime) / 1000; // seconds
       lastTime = ts;
@@ -49,7 +43,7 @@ function TechCarousel({ skills, title }) {
       cancelAnimationFrame(rafId);
       ro.disconnect();
     };
-  }, [paused, skills.length]);
+  }, [skills.length]);
 
   return (
     <div className="space-y-4">
@@ -60,8 +54,6 @@ function TechCarousel({ skills, title }) {
         <div
           ref={maskRef}
           className="overflow-hidden"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
         >
           {/* Duplicate list to enable seamless marquee */}
           <div ref={trackRef} className="flex gap-4 px-1 py-2 will-change-transform">
