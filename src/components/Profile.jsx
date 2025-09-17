@@ -1,6 +1,6 @@
 import { useI18n } from "../i18n/i18n.jsx";
 
-function Profile({ image, degree }) {
+function Profile({ image }) {
   const { t } = useI18n();
   return (
     <div className="flex justify-center">

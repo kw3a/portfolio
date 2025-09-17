@@ -1,5 +1,5 @@
 import ProjectCard from "./components/ProjectCard";
-import foto from "./assets/foto.jpg";
+import foto from "./assets/me.jpeg";
 import Profile from "./components/Profile";
 import TechCarousel from "./components/TechCarousel";
 import { skills } from "./data/skills";
@@ -20,7 +20,7 @@ function App() {
       <main className="mx-auto max-w-4xl px-4 sm:px-6 py-12 space-y-14">
         {/* Profile */}
         <section>
-          <Profile image={foto} degree={t("profile.degree")} />
+          <Profile image={foto} />
         </section>
 
         {/* Technologies */}
