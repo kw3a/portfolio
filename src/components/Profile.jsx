@@ -13,9 +13,9 @@ function Profile({ image }) {
         <div>
           <span className="block text-2xl sm:text-3xl font-bold tracking-tight">Aldair Torrez</span>
         </div>
-        <p className="max-w-2xl text-base sm:text-lg text-gray-300 leading-relaxed">
+        <pre className="whitespace-pre-wrap max-w-2xl text-base sm:text-lg text-gray-300 leading-relaxed">
           {t("profile.description")}
-        </p>
+        </pre>
       </div>
     </div>
   );

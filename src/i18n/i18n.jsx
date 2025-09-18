@@ -13,14 +13,15 @@ const STORAGE_KEY = "app.lang";
 const messages = {
   es: {
     sections: {
-      skills: "Herramientas",
+      skills: "Habilidades",
       projects: "Proyectos",
       experiences: "Experiencia",
       education: "Educación",
+      contact: "Contacto",
     },
     profile: {
       description:
-        "Disfruto abordar proyectos diversos. Mientras más diferente al anterior, mejor",
+        "Desarrollador full-stack. \nDisfruto abordar proyectos diversos. Mientras más diferente al anterior, mejor",
     },
     common: {
       no_image: "Sin imagen",
@@ -30,17 +31,23 @@ const messages = {
       language_toggle: "ES",
       change_language: "Cambiar idioma",
     },
+    contact: {
+      email: "Correo",
+      phone: "Teléfono",
+      linkedin: "LinkedIn",
+    },
   },
   en: {
     sections: {
-      skills: "Tools",
+      skills: "Skills",
       projects: "Projects",
       experiences: "Experience",
       education: "Education",
+      contact: "Contact",
     },
     profile: {
       description:
-        "I like to work on diverse projects. The more different from the previous one, the better",
+        "Full-stack developer. \nI like to work on diverse projects. The more different from the previous one, the better",
     },
     common: {
       no_image: "No image",
@@ -49,6 +56,11 @@ const messages = {
       code_path: "src/data/experiences.js",
       language_toggle: "EN",
       change_language: "Change language",
+    },
+    contact: {
+      email: "Email",
+      phone: "Phone",
+      linkedin: "LinkedIn",
     },
   },
 };

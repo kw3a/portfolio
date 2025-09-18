@@ -6,6 +6,7 @@ function ExperienceCard({ role, company, location, period, description, tags = [
   const companyTxt = tl(company);
   const locationTxt = tl(location);
   const descTxt = tl(description);
+  const periodTxt = tl(period)
   return (
     <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-5 flex flex-col gap-2">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -16,7 +17,7 @@ function ExperienceCard({ role, company, location, period, description, tags = [
             {locationTxt ? ` • ${locationTxt}` : ''}
           </p>
         </div>
-        {period && <span className="text-sm text-gray-400">{period}</span>}
+        {period && <span className="text-sm text-gray-400">{periodTxt}</span>}
       </div>
       {descTxt && (
         <p className="text-sm text-gray-300 leading-relaxed">{descTxt}</p>
