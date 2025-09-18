@@ -19,13 +19,6 @@ function Footer() {
                   <a href={`mailto:${contact.email}`} className="text-sm hover:underline break-all">{contact.email}</a>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="h-8 w-8 inline-flex items-center justify-center rounded bg-gray-800/60 border border-gray-700 text-gray-300">☎</div>
-                <div>
-                  <div className="text-xs text-gray-400">{t("contact.phone")}</div>
-                  <span className="text-sm">{contact.phone}</span>
-                </div>
-              </div>
               {contact.linkedin ? (
                 <div className="flex items-center gap-3">
                   <div className="h-8 w-8 inline-flex items-center justify-center rounded bg-gray-800/60 border border-gray-700 text-gray-300">in</div>
